@@ -9,13 +9,13 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI messageText;
 
-    private int count = 0;
+    private int currentCount = 0;
 
     bool isGameOver = false;
 
     private void Update()
     {
-        if(count == 3 && !isGameOver)
+        if(currentCount == 3 && !isGameOver)
         {
             messageText.text = "You Won!";
         }
@@ -25,8 +25,8 @@ public class GameManager : MonoBehaviour
     {
         if (!isGameOver)
         {
-            count += count;
-            countText.text = "Count:" + count;
+            currentCount += count;
+            countText.text = "Count:" + currentCount;
             messageText.text = "Message: Crate destroyed!";
         }
         

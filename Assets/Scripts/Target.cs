@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    private int currentCount = 0;
-
     private GameManager gameManager;
 
     private void Start()
