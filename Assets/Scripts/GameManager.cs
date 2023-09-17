@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     {
         if(currentCount == 3 && !isGameOver)
         {
-            messageText.text = "You Won!";
+            messageText.text = "Message: You Won!";
         }
     }
 
